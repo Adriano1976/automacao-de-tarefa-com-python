@@ -6,25 +6,19 @@ Cotação máxima da ação
 Cotação do dia
 '''
 
-import yfinance
-import pyautogui
-import pyperclip
+import yfinance  # Importa a biblioteca yfinance para lidar com dados financeiros.
+import pyautogui  # Importa a biblioteca pyautogui para automatizar a interação com a GUI.
+import pyperclip  # Importa a biblioteca pyperclip para acessar a área de transferência do sistema. 
 
 # Buscar automaticamente os dados das ações
 codigo = input("Digite o código da ação desejada: ")
 dados = yfinance.Ticker(codigo).history("6mo")
 fechamento = dados.Close
-imagem = fechamento.plot()
-print(fechamento)
 
 # Gerar as análises de forma automática
 maxima = fechamento.max()
 minima = fechamento.min()
 atual = fechamento.iloc[-1]
-
-print(maxima)
-print(minima)
-print(atual)
 
 # Criando o e-mail que vamos enviar
 destinatario = "aquivocetempromocao@gmail.com"
@@ -33,8 +27,6 @@ mensagem = f"""
 Bom dia,
 
 Segue abaixo as análises da ação {codigo} dos últimos seis meses:
-
-{imagem}
 
 - Cotação máxima: R$ {round(maxima,2)}
 - Cotação mínima: R$ {round(minima,2)}
