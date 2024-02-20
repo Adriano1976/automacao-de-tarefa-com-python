@@ -47,3 +47,13 @@ Utiliza loops para iterar sobre todos os produtos cadastrados de forma automatiz
 ## Conclusão
 
 O projeto mostra na prática os benefícios de automatizar tarefas repetitivas com Python, resultando em ganhos de produtividade e redução de erros.
+
+<hr>
+
+<div align="center">
+<br><p align="centre"><b>Contagem de visitantes</b></p>  
+<p align="center"><img align="center" src="https://profile-counter.glitch.me/{automacao-de-tarefa-com-python}/count.svg" /></p> 
+<br>  
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=87CEFA&height=120&section=footer"/>**** 
+</div>
